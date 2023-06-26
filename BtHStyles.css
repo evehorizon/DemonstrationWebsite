@@ -35,6 +35,10 @@ body {
         line-height: 150%;
     }
 
+.advertisement {
+    float: right;
+}
+
 @media (min-width: 85rem) {
     .article {
         width: 65rem;
