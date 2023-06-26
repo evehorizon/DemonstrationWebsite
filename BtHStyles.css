@@ -124,6 +124,13 @@ nav li:last-child {
     float: right;
 }
 
+#clearSave {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
 /*
     ******************************
     Styling for Construction Pages

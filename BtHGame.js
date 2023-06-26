@@ -68,6 +68,7 @@ window.setInterval(function save() {
 }, 5000)
 
 function load() {
+
     skrungles = localStorage.getItem("skrungles");
     skrungles = parseInt(skrungles);
     cursors = localStorage.getItem("cursors");
@@ -94,7 +95,40 @@ function load() {
     document.getElementById("denCost").innerHTML = nextDenCost;
 }
 
-window.onload = load;
+if (localStorage.getItem("skrungles") != null) {
+    window.onload = load;
+}
+
+function deleteSave() {
+    var result = confirm("Are you sure you want to delete your save? This cannot be undone.");
+    if (result) {
+        localStorage.clear();
+        setAllValues(0);
+        refreshValues();
+    }
+}
+
+function refreshValues() {
+    document.getElementById("skrungles").innerHTML = Math.floor(skrungles);
+    document.getElementById('cursors').innerHTML = cursors; 
+    document.getElementById('cursorCost').innerHTML = 10;
+    document.getElementById('trappers').innerHTML = trappers;
+    document.getElementById('trapperCost').innerHTML = 100
+    document.getElementById('dens').innerHTML = dens;
+    document.getElementById('denCost').innerHTML = 10000
+
+}
+
+function setAllValues(value) {
+    skrungles = value;
+    cursors = value;
+    trappers = value;
+    dens = value;
+    sps = value;
+    nextCursorCost = value;
+    nextTrapperCost = value;
+    nextDenCost = value;
+}
 
 window.setInterval(function () {
     skrungClick(cursors * .1);
