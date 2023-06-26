@@ -1,0 +1,144 @@
+﻿html {
+    font-size: 62.5%;
+}
+
+header h1 {
+    font-size: 2.4rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial;
+    font-size: 2rem;
+    background-image: url(Pictures/BtHMountains.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container-article {
+    display: flex;
+    justify-content: center;
+}
+
+.article {
+    width: 55rem;
+    color: #f0f1ff;
+    background-color: #4f505ccc;
+    padding: .8rem;
+    /*margin: 0 auto;*/
+    height: 64.5rem;
+}
+
+    .article p {
+        padding: .8rem;
+        line-height: 150%;
+    }
+
+@media (min-width: 85rem) {
+    .article {
+        width: 65rem;
+    }
+}
+
+ul {
+}
+
+nav {
+    width: 100%;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        overflow: hidden;
+        background-color: #200d3bf1;
+    }
+
+    nav li {
+    }
+
+.navbar li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 16px 18px;
+    font-size: 2rem;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #140824;
+}
+
+.active {
+    background-color: #124d19f1;
+}
+
+nav li:last-child {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+    background-color: #b8b8b880;
+    font-size: 1.2rem;
+}
+
+/*
+    *********************
+    Styling for Game Page
+    *********************
+*/
+
+.store, .counter {
+    font-size: 3.6rem;
+    color: white;
+}
+
+.counter {
+    margin-left: 1.6rem;
+}
+
+.sps, .sps span {
+    font-size: 2.4rem;
+    color: white;
+}
+
+#upgradeText {
+    font-size: 2.4rem;
+    color: white;
+    margin: 0;
+    margin-right: 1.6rem;
+    padding: 0;
+    float: right;
+}
+
+/*
+    ******************************
+    Styling for Construction Pages
+    ******************************
+*/
+
+#construction {
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+#constructionsubtext {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+#constructionpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}

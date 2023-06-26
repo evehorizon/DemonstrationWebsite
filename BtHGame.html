@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Beyond the Horizon: Idle Game</title>
+    <link rel="stylesheet" href="BtHStyles.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="BtHHomepage.html">Home</a></li>
+                <li><a href="BtHProducts.html">Products</a></li>
+                <li><a href="BtHContact.html">Contact Me</a></li>
+                <li><a class="active" href="BtHGame.html">Game</a></li>
+                <li><a href="BtHAbout.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="upgrades">
+        <p id="upgradeText">Upgrades</p>
+    </div>
+    <span class="counter" id="skrungles">0</span><br />
+    <div class="store">
+        <p class="sps">Spawning <span id="sps">No</span> Skrungles Per Second..</p>
+        <button onclick="skrungClick(1)">Lure Skrungle</button><br />
+        <button class="buy" onclick="buyCursor()">Sacrifice Skrungles for a Cursor: <span id="cursorCost">10</span></button>
+        <span class="counter" id="cursors">0</span><br />
+        <button class="buy" onclick="buyTrapper()">Sacrifice Skrungles to attract a Trapper: <span id="trapperCost">100</span></button>
+        <span class="counter" id="trappers">0</span><br />
+        <button class="buy" onclick="buyDen()">Sacrifice Skrungles to Create a Den: <span id="denCost">10000</span></button>
+        <span class="counter" id="dens">0</span><br />
+    </div>
+    <script type="text/javascript" src="BtHGame.js"></script>
+</body>
+</html>
