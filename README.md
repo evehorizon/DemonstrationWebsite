@@ -1,0 +1,1 @@
+This is a WIP project I took up in my spare time while on a roadtrip. The goal was to get familiar with CSS styling; however, I found that I had fun tackling many different aspects of making a website, including creating an idle game using JavaScript.
